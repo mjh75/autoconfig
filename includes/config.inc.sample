@@ -1,0 +1,44 @@
+<?php
+	$dbhost = "localhoist";
+	$dbuser = "user";
+	$dbpwd = "password";
+	$db = "db";
+
+	/*
+	 * For this section Y and 1 are synonymous and N and 0 are synonymous
+	 * The query needs to return the users name,
+	 * a Y|N,1|0 to indicate if POP3 is disabled
+	 * a Y|N,1|0 to indicate if IMAP is disabled
+	 * a Y|N,1|0 to indicate if SMTP is enabled
+	 * The only parameter passed to the query is the email address
+	 */
+	$query = "SELECT `name`, `disablepop3`, `disableimap`, `smtpaccess` FROM `users` WHERE `email` = ?";
+
+	/*
+	 * The providers home page
+	 */
+	$home = "http://www.example.com/";
+
+	/*
+	 * The providers name
+	 */
+	$provider = "Provider";
+	$providerid = "example.com";
+
+	$servers = [];
+	$servers["IMAP"]['server'] = "imap.example.com";
+	$servers["IMAP"]['port'] = 143;
+	$servers["IMAP"]['starttls'] = \TRUE;
+	$servers["IMAPS"]['server'] = "imap.example.com";
+	$servers["IMAPS"]['port'] = 993;
+	$servers["IMAPS"]['starttls'] = \FALSE;
+	$servers["POP3"]['server'] = "pop.example.com";
+	$servers["POP3"]['port'] = 110;
+	$servers["POP3"]['starttls'] = \TRUE;
+	$servers["POP3S"]['server'] = "pop.example.com";
+	$servers["POP3S"]['port'] = 995;
+	$servers["POP3S"]['starttls'] = \FALSE;
+	$servers["SMTP"]['server'] = "smtp.example.com";
+	$servers["SMTP"]['port'] = 587;
+	$servers["SMTP"]['starttls'] = \TRUE;
+
