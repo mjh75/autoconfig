@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c8e9986ec0167a5d66b5bc27839382e1",
+    "content-hash": "1198c26415191c91a4ab73658c4ac087",
+    "packages": [
+        {
+            "name": "hartwick/hcclib",
+            "version": "v2.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mjh75/hcclib.git",
+                "reference": "a4427d054aa7439668902c6ff522db0bdd854b10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mjh75/hcclib/zipball/a4427d054aa7439668902c6ff522db0bdd854b10",
+                "reference": "a4427d054aa7439668902c6ff522db0bdd854b10",
+                "shasum": ""
+            },
+            "require": {
+                "pear/net_dns2": "1.4.1",
+                "php": ">=5.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "com\\hartwick\\": "com/hartwick/"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael J. Hartwick",
+                    "email": "hartwick@hartwick.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Description",
+            "support": {
+                "source": "https://github.com/mjh75/hcclib/tree/v2.1.19",
+                "issues": "https://github.com/mjh75/hcclib/issues"
+            },
+            "time": "2016-07-02 21:44:58"
+        },
+        {
+            "name": "pear/net_dns2",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikepultz/netdns2.git",
+                "reference": "ba0ede1df70ed98591a14efc88fb9097eafaf541"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/ba0ede1df70ed98591a14efc88fb9097eafaf541",
+                "reference": "ba0ede1df70ed98591a14efc88fb9097eafaf541",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Net_DNS2": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Pultz",
+                    "email": "mike@mikepultz.com",
+                    "homepage": "http://mikepultz.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Native PHP5 DNS Resolver and Updater Library",
+            "homepage": "http://netdns2.com/",
+            "keywords": [
+                "dns",
+                "network"
+            ],
+            "time": "2015-04-13 00:55:32"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

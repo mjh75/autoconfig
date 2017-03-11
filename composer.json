@@ -1,0 +1,15 @@
+{
+	"name": "Michael J. Hartwick <hartwick at hartwick.com>",
+	"description": "Email autoconfigure",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/mjh75/hcclib.git"
+		}
+	],
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"require": {
+		"hartwick/hcclib": "2.1.*"
+	}
+}
